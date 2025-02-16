@@ -5,7 +5,6 @@ import 'aos/dist/aos.css'; // AOS CSS
 import AOS from 'aos'; // AOS JS
 import TypeIt from 'typeit'; // Correct TypeIt import
 import './style.css';
-import './page.js';
 // Header Component
 const Header = () => {
   return (
@@ -13,7 +12,8 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="#">
-            <img src="https://i.postimg.cc/XJFMdqW2/signature.png" alt="signature" width="100" />
+            <h6>Sneha</h6>
+            {/* <img src="https://i.postimg.cc/XJFMdqW2/signature.png" alt="signature" width="100" /> */}
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <i className="fa-solid fa-bars"></i>
@@ -41,7 +41,7 @@ const Home = () => {
       <div className="container row flex-wrap-reverse">
         <div className="col-md-8 d-flex flex-column justify-content-center" data-aos="fade-right">
           <h1 className="display-5 fw-bold mb-3">👋 Hello I am Snehalatha Reddy</h1>
-          <p className="px-2 flex">I am a <span id="typed-text"></span></p>
+          <p className="px-2 flex">I am currently pursuing my Master of Computer Applications (MCA) and have a strong passion for technology and software development.  <span id="typed-text"></span></p>
           <div className="d-flex gap-3 fs-3 px-2">
             <a href="https://www.linkedin.com/in/yash-koladiya/"><i className="fa-brands fa-linkedin"></i></a>
             <a href="https://www.instagram.com/mr_yash_koladiya/"><i className="fa-brands fa-instagram"></i></a>
@@ -50,12 +50,13 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-4 text-center" data-aos="fade-left">
-          <img src="https://i.postimg.cc/Px1cN7b9/111.png" className="img-fluid border rounded-circle" alt="YASH KOLADIYA profile" loading="lazy" width="300" />
+          <img src="/profileimage.jpeg" className="img-fluid border rounded-circle" alt="Sneha Latha Reddy profile" loading="lazy" width="300" />
         </div>
       </div>
       <button className="btn btn-dark" id="scrollBtn">
         <i className="fa-solid fa-arrow-up"></i>
       </button>
+
     </section>
   );
 };
@@ -216,7 +217,7 @@ const Contact = () => {
 const Footer = () => {
   return (
     <footer className="text-center">
-      <p className="fs-5">Made With <i className="fa-solid text-danger fa-heart"></i> By Yash Koladiya</p>
+      <p className="fs-5">Made With <i className="fa-solid text-danger fa-heart"></i> By SnehaLatha</p>
     </footer>
   );
 };

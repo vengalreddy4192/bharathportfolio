@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Correct Font Awesome import
-import 'aos/dist/aos.css'; // AOS CSS
-import AOS from 'aos'; // AOS JS
-import TypeIt from 'typeit'; // Correct TypeIt import
-import './style.css';
-import './page.js';
+import 'font-awesome/css/font-awesome.min.css';
+import './task4.css'; // Ensure you have the CSS file
+import { TypeIt } from 'typeit'; // Install typeit if needed
+
 // Header Component
 const Header = () => {
   return (
@@ -40,7 +38,7 @@ const Home = () => {
     <section id="home">
       <div className="container row flex-wrap-reverse">
         <div className="col-md-8 d-flex flex-column justify-content-center" data-aos="fade-right">
-          <h1 className="display-5 fw-bold mb-3">👋 Hello I am Snehalatha Reddy</h1>
+          <h1 className="display-5 fw-bold mb-3">👋 Hello I am YASH KOLADIYA</h1>
           <p className="px-2 flex">I am a <span id="typed-text"></span></p>
           <div className="d-flex gap-3 fs-3 px-2">
             <a href="https://www.linkedin.com/in/yash-koladiya/"><i className="fa-brands fa-linkedin"></i></a>
@@ -67,7 +65,7 @@ const About = () => {
       <div className="container py-5 mb-5">
         <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3" data-aos="fade-up">About Me</h1>
         <p className="fs-5" data-aos="fade-up">
-          I am a highly motivated Master of Computer Applications (MCA) graduate from College, Bengaluru. With a strong passion for software development, I have honed my skills in Java, Python, HTML, CSS, and JavaScript through various hands-on projects. My experience includes designing and developing a personal portfolio website and an eCommerce website, which showcase my ability to create responsive and dynamic web applications. I am proficient in user authentication, data security, and advanced search and filtering options. Additionally, I hold certifications in Google Analytics and Data Studio. I am eager to contribute to a dynamic team, leveraging my strong communication, problem-solving, and creative skills to tackle challenging projects. Fluent in English and Gujarati, I am ready to bring my expertise to a collaborative and innovative work environment. Thank you for visiting my website. Feel free to contact me or connect with me on social media.
+          I am a highly motivated Bachelor of Computer Applications (BCA) graduate from Silver Oak University in Ahmedabad, Gujarat. With a strong passion for software development, I have honed my skills in Java, Python, HTML, CSS, and JavaScript through various hands-on projects. My experience includes designing and developing a personal portfolio website and an eCommerce website, which showcase my ability to create responsive and dynamic web applications. I am proficient in user authentication, data security, and advanced search and filtering options. Additionally, I hold certifications in Google Analytics and Data Studio. I am eager to contribute to a dynamic team, leveraging my strong communication, problem-solving, and creative skills to tackle challenging projects. Fluent in English and Gujarati, I am ready to bring my expertise to a collaborative and innovative work environment. Thank you for visiting my website. Feel free to contact me or connect with me on social media.
         </p>
         <div className="d-flex gap-2" data-aos="fade-up">
           <a href="https://drive.google.com/file/d/1EF-Udc1UV2yxhBXXKRy1kfCt-O-nktV0/view?usp=sharing" className="list-group-item"><button type="button" className="btn btn-dark">My Resume</button></a>
@@ -185,23 +183,23 @@ const Contact = () => {
         <div className="row my-5 py-5">
           <div className="col-md-6 d-flex flex-column align-items-start justify-content-center">
             <h1 className="display-5 fw-bold mb-3">Contact Me</h1>
-            <p className="fs-5">Prefer email? Reach out to me at <i className="fa-solid envelope"></i> <a href="mailto:YKOLADIYA193@gmail.com" target="_blank"></a></p>
-            <p className="fs-5"><i className="fa-solid fa-phone"></i>+91 6361679639</p>
+            <p className="fs-5">Prefer email? Reach out to me at <i className="fa-solid envelope"></i> <a href="mailto:YKOLADIYA193@gmail.com" target="_blank">YKOLADIYA193@GMAIL.Computer</a></p>
+            <p className="fs-5"><i className="fa-solid fa-phone"></i>+91 8347809524</p>
           </div>
           <div className="col-md-6">
             <p className="fs-5">Send me a message</p>
             <form action="other_page.php" method="POST/GET">
               <div className="form-floating mb-3">
                 <input type="text" className="form-control" name="name" id="name" placeholder="Your name" />
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Your Name</label>
               </div>
               <div className="form-floating mb-3">
                 <input type="email" className="form-control" name="email" id="email" placeholder="name@example.com" />
-                <label htmlFor="email"> Email</label>
+                <label htmlFor="email">Your Email</label>
               </div>
               <div className="form-floating mb-3">
                 <textarea name="message" id="message" className="form-control" placeholder="Hello Ankit"></textarea>
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Your message</label>
               </div>
               <button className="w-100 btn btn-lg btn-success" type="submit">Send <i className="fa-solid fa-paper-plane"></i></button>
             </form>
@@ -220,15 +218,9 @@ const Footer = () => {
     </footer>
   );
 };
-// Education, Skills, Projects, Contact, and Footer components remain the same as in your original code.
 
-// Main App Component
-const App = () => {
-  useEffect(() => {
-    // Initialize AOS
-    AOS.init({ duration: 1000 });
-  }, []);
-
+// Main Portfolio Component
+const Portfolio = () => {
   return (
     <div>
       <Header />
@@ -243,4 +235,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Portfolio;
